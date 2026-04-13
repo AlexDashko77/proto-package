@@ -16,11 +16,11 @@
     "generate": "buf generate"
   },
   "dependencies": {
-    "@bufbuild/protobuf": "2.2.3",
-    "@semantic-release/commit-analyzer": "^13.0.1"
+    "@bufbuild/protobuf": "2.2.3"
   },
   "devDependencies": {
     "@absc_company/semantic-release": "^1.0.2",
+    "@semantic-release/commit-analyzer": "^13.0.1",
     "@bufbuild/buf": "^1.47.2",
     "@bufbuild/protoc-gen-es": "2.2.3",
     "@semantic-release/git": "^10.0.1"
