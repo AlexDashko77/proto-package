@@ -13,7 +13,8 @@
     "access": "public"
   },
   "scripts": {
-    "generate": "buf generate"
+    "generate": "buf generate",
+    "build": "buf generate"
   },
   "dependencies": {
     "@bufbuild/protobuf": "2.2.3"
