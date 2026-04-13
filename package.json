@@ -1,6 +1,6 @@
 {
   "name": "@meliora-code/protos",
-  "version": "1.2.4",
+  "version": "1.0.0",
   "type": "module",
   "exports": {
     "./chat": "./gen/chat/chat_pb.js",
