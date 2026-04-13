@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package example.v1;
+
+service ExampleService {
+  rpc GetExample    (GetExampleRequest)    returns (GetExampleResponse);
+  rpc CreateExample (CreateExampleRequest) returns (CreateExampleResponse);
+  rpc ListExamples  (ListExamplesRequest)  returns (ListExamplesResponse);
+}
+
+
+message ExampleMessage {
+  string id         = 1;
+  string name       = 2;
+  string created_at = 3;
+  string updated_at = 4;
+}
+
+message GetExampleRequest    { string id   = 1; }
+message GetExampleResponse   { ExampleMessage example = 1; }
+
+message CreateExampleRequest { string name = 1; }
+message CreateExampleResponse{ ExampleMessage example = 1; }
+
+message ListExamplesRequest  {}
+message ListExamplesResponse { repeated ExampleMessage examples = 1; }
